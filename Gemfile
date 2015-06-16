@@ -7,12 +7,18 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem "factory_girl_rails", "~> 4.0"
+gem 'devise'
+gem "paperclip", "~> 4.2"
+gem 'bootstrap-sass'
+gem "cancancan"
 
 group :development do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
   gem 'quiet_assets'
+  gem "letter_opener"
 end
 
 group :test, :development do
@@ -21,4 +27,5 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'capybara'
 end

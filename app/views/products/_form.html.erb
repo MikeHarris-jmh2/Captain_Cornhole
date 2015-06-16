@@ -1,0 +1,27 @@
+<%= form_for @product do |f| %>
+
+  <div class="form_group">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="photo_upload">
+    <%= f.file_field :photo %>
+  </div>
+
+
+  <div class="form_group">
+    <%= f.submit :class => "btn btn-primary" %>
+  </div>
+
+<% end %>
