@@ -1,12 +1,11 @@
 class PagesController < ApplicationController
-def home
+  def home
   @products = Product.all
-end
+  end
 
-def about
-end
+  def about
+  end
 
-def contact
-end
-
+  def contact
+  end
 end

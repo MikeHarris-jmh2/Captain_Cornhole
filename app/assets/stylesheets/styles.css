@@ -2,11 +2,41 @@
 	  padding-bottom: 12px;
 }
 
-#property_photo {
+#product_photo {
 	  padding: 20px 0;
 }
+
 
 .logo {
 	  max-width: 45px;
 	  padding: 7px 0 0 7px;
+}
+
+
+.list-unstyled {
+	display: inline;
+	text-align: bottom;
+}
+
+.navbar {
+	background-color: lightgreen;
+}
+
+#cornhole {
+	max-width: 100%;
+  max-height: auto;
+  padding: 20px;
+  margin: 20px;
+}
+
+.jumbotron {
+	background-color: grey;
+}
+
+body {
+	background-color: lightyellow;
+}
+
+* {
+	font-style: "pieces of eight";
 }
