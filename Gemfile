@@ -12,6 +12,7 @@ gem 'devise'
 gem "paperclip", "~> 4.2"
 gem 'bootstrap-sass'
 gem "cancancan"
+gem "rest-client"
 
 group :development do
   gem 'byebug'
@@ -23,6 +24,7 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
