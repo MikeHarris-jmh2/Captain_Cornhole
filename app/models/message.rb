@@ -1,9 +1,15 @@
 class Message < ActiveRecord::Base
-  before_create :send_sms
+  before_create :send_message
+
+  def initialize(attributes)
+    @to = attributes['to']
+    @from = attributes['from']
+    @body = attributes['body']
+  end
 
   private
 
-  def send_sms
+  def send_message
     response = RestClient::Request.new(
       :method => :post,
       :url => 'https://api.twilio.com/2010-04-01/Accounts/AC6650453086e3f6940bf702113274bcbe/Messages.json',
@@ -13,5 +19,8 @@ class Message < ActiveRecord::Base
                     :From => from,
                     :To => to }
     ).execute
+  rescue RestClient::BadRequest => error
+    message = JSON.parse(error.response)['message']
+    errors.add(:base, message)
   end
 end
