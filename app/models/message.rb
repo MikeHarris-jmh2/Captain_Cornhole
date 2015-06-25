@@ -1,11 +1,7 @@
 class Message < ActiveRecord::Base
   before_create :send_message
 
-  def initialize(attributes)
-    @to = attributes['to']
-    @from = attributes['from']
-    @body = attributes['body']
-  end
+  
 
   private
 

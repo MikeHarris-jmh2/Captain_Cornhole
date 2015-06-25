@@ -2,10 +2,25 @@
 	  padding-bottom: 12px;
 }
 
-#product_photo {
-	  padding: 20px 0;
+
+#cornhole{
+		border-radius: 25px;
+    background: lightgray;
+    padding: 20px;
+    width: 500px;
+    height: 380px;
+		text-transform: uppercase;
 }
 
+#image{
+	display:block;
+	width: 100%;
+
+}
+
+a{
+	color: black;
+}
 
 .logo {
 	  max-width: 45px;
@@ -30,13 +45,16 @@
 }
 
 .jumbotron {
-	background-color: grey;
+	background-color: lightgreen;
 }
 
 body {
 	background-color: lightyellow;
 }
 
-* {
-	font-style: "pieces of eight";
+@font-face {
+	font-family: 'Pieces of Eight Alt';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Pieces of Eight Alt'), url('Pieces of Eight.woff'), format('woff');
 }
