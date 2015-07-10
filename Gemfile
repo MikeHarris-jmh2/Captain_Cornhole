@@ -13,6 +13,7 @@ gem "paperclip", "~> 4.2"
 gem 'bootstrap-sass'
 gem "cancancan"
 gem "rest-client"
+gem "twilio-ruby"
 
 group :development do
   gem 'byebug'
