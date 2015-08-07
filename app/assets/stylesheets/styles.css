@@ -50,11 +50,5 @@ a{
 
 body {
 	background-color: lightyellow;
-}
-
-@font-face {
-	font-family: 'Pieces of Eight Alt';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Pieces of Eight Alt'), url('Pieces of Eight.woff'), format('woff');
+	font-family: "Treasure Map Deadhand";
 }
