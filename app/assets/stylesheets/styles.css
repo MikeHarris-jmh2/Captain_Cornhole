@@ -6,10 +6,17 @@
 #cornhole{
 		border-radius: 45px;
     background: lightgray;
-    padding: 20px;
-    width: 500px;
-    height: 380px;
+		padding:10px;
+    width: 400px;
+    height: 400px;
 		text-transform: uppercase;
+		margin:auto;
+}
+#cornhole {
+	max-width: 100%;
+  max-height: auto;
+  padding: 20px;
+  margin: 20px;
 }
 
 #image{
@@ -37,11 +44,8 @@ a{
 	background-color: #71ABFF;
 }
 
-#cornhole {
-	max-width: 100%;
-  max-height: auto;
-  padding: 20px;
-  margin: 20px;
+.contact{
+	font-size:25px;
 }
 
 .jumbotron {
@@ -51,4 +55,5 @@ a{
 body {
 	background-color: lightyellow;
 	font-family: "Treasure Map Deadhand";
+	font-size: 25px;
 }
