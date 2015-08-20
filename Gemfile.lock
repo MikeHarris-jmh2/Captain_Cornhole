@@ -224,6 +224,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bootstrap-sass
   byebug
   cancancan
