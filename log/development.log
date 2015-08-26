@@ -12843,3 +12843,156 @@ Processing by HomeController#index as HTML
   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
   Rendered home/index.html.erb within layouts/application (5.6ms)
 Completed 200 OK in 113ms (Views: 111.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 15:45:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (43.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35m (44.2ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (432.5ms)
+Completed 200 OK in 4196ms (Views: 3713.1ms | ActiveRecord: 393.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 15:45:27 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 15:45:35 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 76ms (Views: 64.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:13 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 246ms (Views: 244.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:15 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:28 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:29 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:38 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:54 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:12:56 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:13:13 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:19:29 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 1107ms (Views: 1105.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:26:12 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 375ms (Views: 374.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:31:03 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 473ms (Views: 471.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-24 16:34:58 -0700
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-24 17:39:13 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (219.1ms)
+  Rendered messages/new.html.erb within layouts/application (269.2ms)
+Completed 200 OK in 432ms (Views: 424.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-24 17:57:44 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIDa7hm5P72hWZeEeM8C9arbZ+5Rwi0A9/el5XjouGiry+ow4FbwwKaHkjVpUdi7DuuHrELB8s4TF0ugff+0iA==", "message"=>{"to"=>"+1 7142695412", "from"=>"+16572206463", "body"=>"Hey bro let me know this worked"}, "commit"=>"Create Message"}
+  [1m[35m (11.4ms)[0m  BEGIN
+  [1m[36mSQL (108.8ms)[0m  [1mINSERT INTO "messages" ("to", "from", "body") VALUES ($1, $2, $3) RETURNING "id"[0m  [["to", "+1 7142695412"], ["from", "+16572206463"], ["body", "Hey bro let me know this worked"]]
+  [1m[35m (9.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 209ms (ActiveRecord: 129.5ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-24 17:57:44 -0700
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.4ms)[0m  [1mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/4" for ::1 at 2015-08-24 17:58:09 -0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMessage Load (0.2ms)[0m  SELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered messages/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 138ms (Views: 52.6ms | ActiveRecord: 0.2ms)
