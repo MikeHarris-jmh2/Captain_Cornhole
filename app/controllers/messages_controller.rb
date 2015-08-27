@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
       @client.account.messages.create({
         :from => '+16572206463',
         :to => '+17142695412',
-        :body => 'hey bro its mike from twilio',
+        :body => @message.body,
       })
       flash[:notice] = "Your message was sent!"
       redirect_to messages_path

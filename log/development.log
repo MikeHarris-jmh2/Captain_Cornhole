@@ -13199,3 +13199,220 @@ Started GET "/messages" for ::1 at 2015-08-27 13:33:17 -0700
 Processing by MessagesController#index as HTML
   Rendered messages/index.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 13:41:10 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 43.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-27 13:41:12 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (2.1ms)
+  Rendered messages/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 13:41:24 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RI9XnCV4ROEBHfoKxpFuTNfzPFuwliR+vrhzwIelaqu91uH8y8PjsCwE30T/rCItGqtPiiZk2i5VoDu0uS8pRg==", "message"=>{"body"=>"How are the boards coming?"}, "commit"=>"Create Message"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"  [["body", "How are the boards coming?"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `message' for #<Message:0x007feb51bc0e28>):
+  app/controllers/messages_controller.rb:16:in `create'
+
+
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.6ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (83.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (149.8ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 13:41:56 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RI9XnCV4ROEBHfoKxpFuTNfzPFuwliR+vrhzwIelaqu91uH8y8PjsCwE30T/rCItGqtPiiZk2i5VoDu0uS8pRg==", "message"=>{"body"=>"How are the boards coming?"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"[0m  [["body", "How are the boards coming?"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.7ms)
+
+NameError (undefined local variable or method `body' for #<MessagesController:0x007feb56212160>):
+  app/controllers/messages_controller.rb:16:in `create'
+
+
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.1ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (45.9ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (101.6ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 13:42:05 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RI9XnCV4ROEBHfoKxpFuTNfzPFuwliR+vrhzwIelaqu91uH8y8PjsCwE30T/rCItGqtPiiZk2i5VoDu0uS8pRg==", "message"=>{"body"=>"How are the boards coming?"}, "commit"=>"Create Message"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"  [["body", "How are the boards coming?"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 1295ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 13:42:07 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 13:42:07 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-27 13:42:09 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (2.0ms)
+  Rendered messages/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 13:42:14 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0ml6dABZh/rMhf3vvnPD6a7VdC+0OQUJBA8MMzXI5ZKEBOJPrrBTsYrMrmHxINua+MmASgiGkTPCHRE8l1gew==", "message"=>{"body"=>"Is this a new message"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"[0m  [["body", "Is this a new message"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 1048ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 13:42:15 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 14:02:26 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 175ms (Views: 167.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-27 14:02:29 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (1.7ms)
+  Rendered messages/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 14:02:41 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lVFFE6+QVMRH3zn758OKeJxPKHjMG1OsJEFuoKUsETxsCPNzQSvzlWrGHLXe/sYZURdbqVrprfzPWSbUm6ZS0Q==", "message"=>{"body"=>"Hello again hopefully this is a new message"}, "commit"=>"Create Message"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"  [["body", "Hello again hopefully this is a new message"]]
+  [1m[36m (25.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 775ms (ActiveRecord: 25.8ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 14:02:42 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 14:04:12 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 89.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-27 14:04:15 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (1.7ms)
+  Rendered messages/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 14:04:21 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e4uovF9GEaRvTqIw748yNlr5r0cyS5rcwqA0Hk1P0Q+C0h7csf229UJXh37Wsn5Xl6HclqS5ZIwpuHxqc8WS4g==", "message"=>{"body"=>"This is hopefully a new message"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"[0m  [["body", "This is hopefully a new message"]]
+  [1m[35m (57.1ms)[0m  COMMIT
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 57.4ms)
+
+NoMethodError (undefined method `message' for #<Message:0x007feb5154a418>):
+  app/controllers/messages_controller.rb:16:in `create'
+
+
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (85.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/mikeharris/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (167.5ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 14:04:50 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e4uovF9GEaRvTqIw748yNlr5r0cyS5rcwqA0Hk1P0Q+C0h7csf229UJXh37Wsn5Xl6HclqS5ZIwpuHxqc8WS4g==", "message"=>{"body"=>"This is hopefully a new message"}, "commit"=>"Create Message"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"  [["body", "This is hopefully a new message"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 812ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 14:04:51 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for ::1 at 2015-08-27 14:04:53 -0700
+Processing by MessagesController#new as HTML
+  Rendered messages/_form.html.erb (1.6ms)
+  Rendered messages/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for ::1 at 2015-08-27 14:05:01 -0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+m/hjSaXr5tlwr0DG5yYnMqkRedygDK+WKxYishgxQsDNlftyCwIykjbmE0iodT9B/w2NuRyzO6ztBD+9uqG5g==", "message"=>{"body"=>"Hopefully this is a new message"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "messages" ("body") VALUES ($1) RETURNING "id"[0m  [["body", "Hopefully this is a new message"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 1321ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/messages" for ::1 at 2015-08-27 14:05:02 -0700
+Processing by MessagesController#index as HTML
+  Rendered messages/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
