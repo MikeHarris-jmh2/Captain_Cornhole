@@ -15,6 +15,7 @@ gem "cancancan"
 gem "rest-client"
 gem "twilio-ruby"
 gem 'autoprefixer-rails'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 group :development do
   gem 'byebug'

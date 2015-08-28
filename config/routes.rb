@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :products
   resources :messages, :only => [:index, :new, :create, :show]
   devise_for :users
+  resources :charges
 end
