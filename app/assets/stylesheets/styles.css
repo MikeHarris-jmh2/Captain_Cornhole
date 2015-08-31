@@ -5,7 +5,7 @@
 
 #cornhole{
 		border-radius: 40px;
-    background: lightgray;
+    background: #E60000;
 		padding:5px;
     width: 350px;
     height: 400px;
@@ -49,12 +49,20 @@ a{
 }
 
 .jumbotron {
-
-	background-color: #1943BF;
+	background-image: url('images/pirate-ship.jpg') no-repeat left;
+	background-color: #1C6BA0;
 }
 
 body {
 	background-color: lightyellow;
 	font-family: "Treasure Map Deadhand";
 	font-size: 25px;
+}
+
+.photo{
+	border: 3px solid black;
+}
+
+.individual{
+	border:3px solid black;
 }
